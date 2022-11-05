@@ -1,0 +1,7 @@
+<h1>Найдено кандидатов с навыком {{ skills }} {{ len_by_candidates }}</h1>
+
+{% for candidate in candidates %}
+
+    <p> <a href="/candidates/{{ candidate.id }}">{{ candidate.name }}</a> </p>
+
+{% endfor %}
